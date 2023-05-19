@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Onboarding</title>
+    <style>
+        /* Add CSS styles for the webpage layout */
+    </style>
+    <script>
+        // Add JavaScript code for form validation and submission
+    </script>
+</head>
+<body>
+    <h1>Loan Application Form</h1>
+
+    <h2>Business Information</h2>
+    <form id="businessForm">
+        <label for="businessName">Business Name:</label>
+        <input type="text" id="businessName" required>
+
+        <!-- Include other necessary input fields for business information -->
+
+        <button type="submit">Next</button>
+    </form>
+
+    <h2>Applicant Information</h2>
+    <form id="applicantForm">
+        <label for="applicantName">Name of Applicant:</label>
+        <input type="text" id="applicantName" required>
+
+        <!-- Include other necessary input fields for applicant information -->
+
+        <button type="submit">Next</button>
+    </form>
+
+    <h2>Loan Details</h2>
+    <form id="loanForm">
+        <label for="loanAmount">Loan Amount Requested:</label>
+        <input type="number" id="loanAmount" required>
+
+        <!-- Include other necessary input fields for loan details -->
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Terms and Conditions</h2>
+    <div id="termsAndConditions">
+        <!-- Display the terms and conditions text here -->
+    </div>
+
+    <button onclick="acceptTerms()">Accept</button>
+
+    <script>
+        // JavaScript code for form validation and submission
+        document.getElementById("businessForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Validate and process business information form
+            // Show/hide relevant sections
+        });
+
+        document.getElementById("applicantForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Validate and process applicant information form
+            // Show/hide relevant sections
+        });
+
+        document.getElementById("loanForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Validate and process loan details form
+            // Show/hide relevant sections
+        });
+
+        function acceptTerms() {
+            // Perform actions when the terms and conditions are accepted
+        }
+    </script>
+</body>
+</html>
